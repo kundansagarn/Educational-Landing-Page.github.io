@@ -162,7 +162,7 @@ h4 {
 #icon {
     justify-content: space-around;
     display: flex;
-    border-top: 1.5px solid #333;
+    border-top: 1.0px solid #333;
 }
 
 .containerr {
