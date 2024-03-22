@@ -65,11 +65,14 @@ a:active {
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 5px;
+    cursor: pointer;
+    border: none;
 }
 
 #btn6:hover {
-    background-color: #333;
+    background-color: #555;
     color: #fff;
+    transition: .55s;
 }
 
 .hero {
@@ -111,15 +114,13 @@ a:active {
     transition: all 0.3s ease-in-out;
     font-family: Arial, sans-serif;
     font-size: medium;
+    cursor: pointer;
 }
 
 #btn4:hover {
     background-color: #555;
 }
 
-/* #home, #aboutus, #services, #contact {
-    gap: 80px;
-} */
 
 .home, .aboutus, .services, .contact {
     padding: 25px 0;
@@ -132,9 +133,32 @@ a:active {
 .services h2 {
     margin-left: 130px;
     margin-bottom: 40px;
+
+}
+
+#btn11 {
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+#btn11:hover {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
 }
 
 
+#heading {
+    text-align: center;
+    margin: auto;
+}
+
+#paragraph {
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 h3{
     margin-top: 50px;
@@ -145,24 +169,33 @@ h4 {
     opacity: .6;
 }
 
+.services {
+    max-width: 100%;
+    justify-content: center;
+    margin: auto;
+}
 .service img {
-    height: 60%;
+    height: 80%;
     width: 100%;
 }
 
 .service {
-    width: 30%;
+    display: grid;
+    width: 20%;
     padding: 20px;
     border: 1px solid #ccc;
     margin-bottom: 20px;
+    
 }
 
 
 
 #icon {
-    justify-content: space-around;
+    justify-content: center;
+    gap: 10px;
     display: flex;
-    border-top: 1.0px solid #333;
+    cursor: pointer;
+    border-bottom: #333;
 }
 
 .containerr {
@@ -172,6 +205,11 @@ h4 {
     padding: 20px;
     margin-left: 100px;
     margin-right: 100px;
+}
+
+#other-container {
+    justify-content: center;
+    display: flex;
 }
 
 #btn5 {
@@ -184,7 +222,7 @@ h4 {
     transition: all 0.3s ease-in-out;
     font-family: Arial, sans-serif;
     font-size: medium;
-
+    cursor: pointer;
 }
 
 #btn5:hover {
