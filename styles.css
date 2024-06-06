@@ -11,6 +11,9 @@ body {
 }
 
 .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: #333;
     color: #fff;
 }
@@ -75,6 +78,25 @@ a:active {
     transition: .55s;
 }
 
+.s_icon{
+   font-size: 25px;
+   margin-right: 6vw;
+   visibility: hidden;
+   cursor: pointer;
+}
+
+@media (max-width: 995px){
+    #navbar,
+    #btn6{
+        display: none;
+    }
+
+    .s_icon{
+        visibility: visible;
+    }
+
+    
+}
 .hero {
     background-color: #f0f0f0;
     padding: 100px 0;
@@ -131,7 +153,7 @@ a:active {
 }
 
 .services h2 {
-    margin-left: 130px;
+    margin-left: 135px;
     margin-bottom: 40px;
 
 }
@@ -170,7 +192,7 @@ h4 {
 }
 
 .services {
-    max-width: 100%;
+    max-width: 99%;
     justify-content: center;
     margin: auto;
 }
@@ -181,11 +203,10 @@ h4 {
 
 .service {
     display: grid;
-    width: 20%;
-    padding: 20px;
+    width: 18%;
+    padding: 16px;
     border: 1px solid #ccc;
     margin-bottom: 20px;
-    
 }
 
 
@@ -227,4 +248,41 @@ h4 {
 
 #btn5:hover {
     background-color: #555; 
+}
+@media (max-width: 500px){
+    .services h2 {
+        margin-left: 35px;
+        margin-bottom: 40px;
+    }
+    .containerr {
+        display: grid;
+        justify-content: center;
+        padding: 20px;
+        margin-left: 100px;
+        margin-right: 100px;
+        
+    }
+    /* .services {
+        max-width: 99%;
+        justify-content: center;
+        margin: auto;
+    } */
+    .service {
+        display: grid;
+        width: 18%;
+        border: 1px solid #ccc;
+    }
+
+    #btn5 {
+        margin-left: 35px;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+        font-family: Arial, sans-serif;
+        font-size: medium;
+        cursor: pointer;
+    }
 }
